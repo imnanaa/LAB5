@@ -1,0 +1,20 @@
+﻿<Window x:Class="LAB5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LAB5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="583.107" Width="608.76">
+    <Grid>
+        <DataGrid x:Name="City"  Margin="0,0,341,10" FontFamily="Times New Roman" FontSize="14" Background="#FFD0EBF7" SelectionChanged="CityDG_SelectionChanged"/>
+        <Label x:Name="citty" Content="Місто" Margin="273,10,10,508" FontSize="18" FontFamily="Times New Roman" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBox x:Name="Name" TextWrapping="Wrap" Margin="268,59,10,441" FontFamily="Times New Roman" FontSize="16" BorderBrush="#FF243A7E"/>
+        <Label x:Name="Co" Content="Коєфіцієнт" Margin="268,131,0,382" FontFamily="Times New Roman" FontWeight="Bold" FontStyle="Italic" FontSize="18"/>
+        <Button x:Name="DELETE" Content="DELETE" Margin="305,484,39,17" FontFamily="Times New Roman" FontSize="20" FontWeight="Bold" Background="#FF243A7E" BorderBrush="{x:Null}" Foreground="White" Click="DELETE_Click_1"/>
+        <Button x:Name="UPDATE" Content="UPDATE" Margin="302,399,39,101" FontFamily="Times New Roman" FontWeight="Bold" FontSize="20" Foreground="White" Background="#FF243A7E" BorderBrush="{x:Null}" Click="Button_Click"/>
+        <Button x:Name="INSERT" Content="INSERT" Margin="302,302,39,195" FontFamily="Times New Roman" FontSize="20" FontWeight="Bold" Background="#FF243A7E" BorderBrush="{x:Null}" Foreground="White" Click="INSERT_Click"/>
+        <TextBox x:Name="Coef" TextWrapping="Wrap" Margin="270,190,8,309" BorderBrush="#FF243A7E" FontFamily="Times New Roman" FontSize="16"/>
+
+    </Grid>
+</Window>
